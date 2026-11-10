@@ -1,0 +1,17 @@
+[package]
+# Ported from: Industrial Foregoing 1.21-3.6.39 (Buuz135/Industrial-Foregoing,
+# MIT), Minecraft Java 1.21.1 NeoForge. Local-only until the maintainer approves.
+name = "horizon-industrialforegoing"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "Industrial Foregoing for Horizon: the Water Condensator, a powered water source condenser"
+
+[lib]
+# This exact source is also injected as a same-crate module by horizon-mixins.
+path = "mixins/industrialforegoing/runtime.rs"
+
+[workspace]
+members = ["tools/audit"]
+resolver = "2"

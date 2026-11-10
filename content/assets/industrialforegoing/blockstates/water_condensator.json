@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "subfacing=east": {
+      "model": "industrialforegoing:block/water_condensator",
+      "y": 90
+    },
+    "subfacing=north": {
+      "model": "industrialforegoing:block/water_condensator"
+    },
+    "subfacing=south": {
+      "model": "industrialforegoing:block/water_condensator",
+      "y": 180
+    },
+    "subfacing=west": {
+      "model": "industrialforegoing:block/water_condensator",
+      "y": 270
+    }
+  }
+}

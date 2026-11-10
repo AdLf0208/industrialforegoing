@@ -1,0 +1,49 @@
+id = "industrialforegoing"
+kind = "native-mod"
+name = "industrialforegoing"
+summary = "A Horizon port of industrialforegoing."
+description = """
+A port of [industrialforegoing](Buuz135/Industrial-Foregoing) for Horizon.
+
+**Implemented so far**
+
+- The block.** `industrialforegoing:water_condensator` on the
+- `minecraft:iron_block`** template (upstream's
+- `Properties.ofFullCopy(Blocks.IRON_BLOCK)`: hardness 5.0, blast resistance
+- , correct tool for drops, iron sounds), with the **`subfacing`** state
+- property Titanium's `RotationType.FOUR_WAY` uses — the jar's own four-variant
+- blockstate selects on it unchanged.
+- Placement rotation.** `state_for_placement` (API 76) sets `subfacing` from
+- the placer's yaw, the face turning toward the placer (the e2e asserts `west`
+
+**Not yet ported**
+
+- No GUI screen and no tooltip.** Upstream draws Titanium's tank, energy and
+- progress bars in a 176-wide panel; the pin's screen helpers need a menu, and
+- this machine has no slots, so slice 1 exposes the same numbers through
+- `/industrialforegoing info` (precedent: `charginggadgets` draws its readouts
+- as text; `/powah info`). The progress bar's client animation is absent.
+- No redstone control modes.** Upstream's `RedstoneManager` offers
+- ignore/on/once/with/without; the default action is `IGNORE`, which this port
+- reproduces (the machine always runs). The modes are a gap.
+
+Original copyright and licence notices are kept in this repository. Pinned to
+Horizon 1d63e0a and horizon-mixins 5a64af93. Help with the remaining slices is
+welcome.
+"""
+authors = ["AdLf0208"]
+owners = ["AdLf0208"]
+owner_ids = [107615167]
+license = "MIT"
+source = "https://github.com/AdLf0208/industrialforegoing"
+icon = "icons/industrialforegoing.png"
+categories = ["utility"]
+tags = ["port", "horizon"]
+
+[[versions]]
+version = "0.1.0"
+published = "2026-11-10"
+game = "26.3"
+file = "industrialforegoing.hnmod"
+sha256 = "f28c8c4213a568b698e557b555b64072486d29c29021f904fa48a84070f9414b"
+changelog = "First release"

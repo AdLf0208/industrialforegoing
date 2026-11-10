@@ -1,0 +1,7 @@
+{
+  "icon": "industrialforegoing:water_condensator",
+  "items": [
+    "industrialforegoing:water_condensator"
+  ],
+  "title": "itemGroup.industrialforegoing_resource_production"
+}

@@ -1,0 +1,10 @@
+# Port-owned content mod for the Industrial Foregoing 1.21-3.6.39 slice: the
+# Water Condensator block and the carried assets/data. The blockstate, models,
+# textures, loot table, recipe and advancement are upstream's own MIT assets,
+# read from the exact ATM10 jar (see ../../_shared/carry-work/industrialforegoing/SOURCE.md).
+id = "industrialforegoing"
+name = "Industrial Foregoing"
+version = "0.1.0"
+api = "0.2"
+side = "both"
+capabilities = ["registries"]

@@ -1,0 +1,5 @@
+{
+  "block.industrialforegoing.water_condensator": "Water Condensator",
+  "itemGroup.industrialforegoing_resource_production": "Industrial Foregoing: Resource Production",
+  "text.industrialforegoing.tooltip.power_optional": "* Power Optional"
+}
